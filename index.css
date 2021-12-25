@@ -70,18 +70,6 @@ p {
   border: 1px solid white;
   background: url('./Assets/Mez.jpg') repeat-x;
   background-size: cover;
-
-  animation: mez 4s infinite linear;
-}
-
-@keyframes mez {
-  0% {
-    background-position: 0%;
-  }
-
-  100% {
-    background-position: 401%;
-  }
 }
 
 #discount {
@@ -103,7 +91,7 @@ p {
   position: relative;
   height: 70px;
   left: 50px;
-  top: 60px;
+  top: 70px;
   animation: amp 1.5s infinite linear;
 }
 
@@ -115,7 +103,7 @@ p {
     left: 400px;
   }
   100% {
-    left: -200px;
+    left: -400px;
   }
 }
 
@@ -128,5 +116,10 @@ p {
   }
   100% {
     top: -50px;
+  }
+}
+@media (max-width: 411px) {
+  #amp {
+    top: 130px;
   }
 }
